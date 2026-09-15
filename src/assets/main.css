@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection {
+    background: #2B4570;
+    color: #F7F5F0;
+  }
+
+  :focus-visible {
+    outline: 2px solid #2B4570;
+    outline-offset: 2px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Source Serif 4', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .prose-manuscript p {
+    margin-bottom: 0.85em;
+    line-height: 1.7;
+  }
+  .prose-manuscript {
+    max-width: 68ch;
+  }
+}
